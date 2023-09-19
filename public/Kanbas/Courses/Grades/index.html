@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Content</title>
+</head>
+
+<body>
+    <h1></h1>
+    <h2></h2>
+    <div id="gradebook-head-toolbar">
+        <select name="gradebook" id="gradebook">
+            <option value="traditional">Gradebook</option>
+        </select>
+        <button>Import</button>
+        <select name="export" id="export">
+            <option value="current">Export</option>
+        </select>
+        <button>Configure</button>
+    </div>
+
+    <div id="gradebook-app">
+        <p>
+        <h3>Student Names</h3>
+        <input type="text" name="studentName" id="studentName" placeholder="Search Students"
+            title="Type the name of the student to search for">
+        <h3>Assignment Names</h3>
+        <input type="text" name="assignmentName" id="assignmentName" placeholder="Search Assignments"
+            title="Type the name of the assignment to search for">
+        </p>
+        <button>Apply Filter</button>
+    </div>
+
+    <div id="gradebook-grid">
+        <br>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>A1 SETUP</th>
+                    <th>A2 HTML</th>
+                    <th>A3 CSS</th>
+                    <th>A4 BOOTSTRAP</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>Brown</td>
+                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
+                </tr>
+                <tr>
+                    <td>Drake</td>
+                    <td>100</td>
+                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Kelly</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Wayne</td>
+                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
+                    <td>100</td>
+                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

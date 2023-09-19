@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Setting Default Course Description Layout</title>
+</head>
+
+<body>
+    <table border="0" width="100%">
+        <tr>
+            <td valign="top">
+                <!-- Kanbas Navigation -->
+                <ul>
+                    <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+                    <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Studio</a></li>
+                    <li><a href="#">Commons</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </td>
+
+            <td valign="top">
+                <!-- Course Navigation -->
+                <ul>
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                    <li><a href="https://piazza.com/class/lm1gi2uzv1x402">Piazza</a></li>
+                    <li><a href="https://northeastern.zoom.us/j/92620912246">Zoom Meetings</a></li>
+                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="/Kanbas/Courses/Settings/screen.html">Seetings</a></li>
+                </ul>
+            </td>
+
+            <td valign="top">
+                <!-- Settings -->
+                <div class="header-toolbar">
+                    <table>
+                        <tr>
+                            <td><a href="/Kanbas/Courses/Settings/screen.html">Course Details</a></td>
+                            <td><a href="#">Sections</a></td>
+                            <td><a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></td>
+                            <td><a href="#">Apps</a></td>
+                            <td><a href="#">Feature Options</a></td>
+                            <td><a href="#">Integrations</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="course-description-container">
+                    <form action="/Kanbas/Courses/Home/screen.html">
+                        <div class="course-details">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2" align="left">
+                                            <h1>Course Details</h1>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-image">Image:</label></div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row"><input type="file" id="course-image"
+                                                    name="course-image" accept="image/*"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-name">Name:</label></div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row"><span id="course-name">CS4550 12631 Web DevelopmentSEC
+                                                    01 Fal 2023
+                                                    [BOS-1-TR]</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-code">Course Code:</label></div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row"><span id="course-code">CS4550.12631.202410</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-blueprint">Blueprint
+                                                    Course:</label></div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row"><span id="course-blueprint">No</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-template">Course
+                                                    Template:</label></div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row"><input name="course-template" id="course-template"
+                                                    type="checkbox" value="false"><label for="course-template">Enable
+                                                    course as a Course
+                                                    Template</label></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-time-zone">Time Zone:</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row"><select name="course-time-zone" id="course-time-zone">
+                                                    <option value="Central Time (US & Canada)">Central Time (US &
+                                                        Canada)(-06:00/-05:00)
+                                                    </option>
+                                                    <option selected="selected" value="Eastern Time (US & Canada)">
+                                                        Eastern Time (US
+                                                        &
+                                                        Canada) (-05:00/-04:00)</option>
+                                                    <option value="London">London (+00:00/+01:00)</option>
+                                                    <option value="UTC">UTC (+00:00)</option>
+                                                    <option value="Amsterdam">Amsterdam (+01:00/+02:00)</option>
+                                                    <option value="Paris">Paris (+01:00/+02:00)</option>
+                                                    <option value="Rome">Rome (+01:00/+02:00)</option>
+                                                </select></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-sis-id">SIS ID:</label></div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row"><span id="course-sis-id">CS4550.12631.202410</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-account-id">Subaccount:</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row"><span id="course-account-id">
+                                                    <a href="#">CS Undergrad</a></span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-enrollment-term-id">Term:</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row"><span id="course-enrollment-term-id">202410_1 Fall
+                                                    2023
+                                                    Semester Full Term</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="availability-option-container"><label
+                                                        for="course-participation-id">Participation:</label></label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <div id="course-term">
+                                                    <label for="course-term">
+                                                        <select name="course-term" id="course-term">
+                                                            <option value="term">Term</option>
+                                                        </select></label>
+                                                    <div>Course participation is limited to <strong>term</strong> start
+                                                        and end
+                                                        dates.
+                                                    </div>
+                                                </div>
+                                                <div id="course-date">
+                                                    <div id="course-start-date">
+                                                        <div><label for="course-start"><b>Start</b></label></div>
+                                                        <input type="date" name="course-start" id="course-start"
+                                                            value="2023-09-18" min="2023-09-01" max="2023-12-31">
+                                                    </div>
+                                                    <div id="course-end-date">
+                                                        <div><label for="course-end"><b>End</b></label></div>
+                                                        <input type="date" name="course-end" id="course-end"
+                                                            value="2023-09-18" min="2023-09-01" max="2023-12-31">
+                                                    </div>
+                                                    <div id="course-restriction">
+                                                        <div>
+                                                            <input type="checkbox" name="course-restriction-before"
+                                                                id="course-restriction-before">
+                                                            <label for="course-restriction-before"><span>Restrict
+                                                                    students from
+                                                                    viewing
+                                                                    course before course start date</span></label>
+                                                        </div>
+                                                        <div>
+                                                            <input type="checkbox" name="course-restriction-after"
+                                                                id="course-restriction-after">
+                                                            <label for="course-restriction-after"><span>Restrict
+                                                                    students from
+                                                                    viewing
+                                                                    course after course end date</span></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-default-due-time">Default due
+                                                    time:</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <select name="course-default-due-time" id="course-default-due-time">
+                                                    <option selected="selected" value="inherit">Account default
+                                                        (11:59pm)</option>
+                                                    <option value="01:00:00"> 1:00am</option>
+                                                    <option value="02:00:00"> 2:00am</option>
+                                                    <option value="03:00:00"> 3:00am</option>
+                                                    <option value="04:00:00"> 4:00am</option>
+                                                    <option value="05:00:00"> 5:00am</option>
+                                                    <option value="06:00:00"> 6:00am</option>
+                                                    <option value="07:00:00"> 7:00am</option>
+                                                    <option value="08:00:00"> 8:00am</option>
+                                                    <option value="09:00:00"> 9:00am</option>
+                                                    <option value="10:00:00">10:00am</option>
+                                                    <option value="11:00:00">11:00am</option>
+                                                    <option value="12:00:00">12:00pm</option>
+                                                    <option value="13:00:00"> 1:00pm</option>
+                                                    <option value="14:00:00"> 2:00pm</option>
+                                                    <option value="15:00:00"> 3:00pm</option>
+                                                    <option value="16:00:00"> 4:00pm</option>
+                                                    <option value="17:00:00"> 5:00pm</option>
+                                                    <option value="18:00:00"> 6:00pm</option>
+                                                    <option value="19:00:00"> 7:00pm</option>
+                                                    <option value="20:00:00"> 8:00pm</option>
+                                                    <option value="21:00:00"> 9:00pm</option>
+                                                    <option value="22:00:00">10:00pm</option>
+                                                    <option value="23:00:00">11:00pm</option>
+                                                    <option value="23:59:59">11:59pm</option>
+                                                </select>
+                                                <div>
+                                                    This influences the user interface for setting due dates. It does
+                                                    not change the
+                                                    time due for any existing assignments.
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-language">Language:</label></div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <div>
+                                                    <select class="course-language" name="course-language"
+                                                        id="course-language">
+                                                        <option value="en-GB">English (United Kingdom)</option>
+                                                        <option selected="selected" value="en">English (United States)
+                                                        </option>
+                                                        <option value="es">Español (Latinoamérica)</option>
+                                                        <option value="fr">Français (France)</option>
+                                                        <option value="it">Italiano</option>
+                                                        <option value="zh-Hans">简体中文</option>
+                                                    </select>
+                                                </div>
+                                                <div> This will override any user/system language preferences. This is
+                                                    only
+                                                    recommended for foreign language courses
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-storage">File Storage:</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <div>10000 megabytes</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="form-label">
+                                                <label for="course-grading-standard-enabled">Grading Scheme:</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <input type="checkbox" value="enable"
+                                                    name="course-grading-standard-enabled"
+                                                    id="course-grading-standard-enabled">
+                                                <label for="course-grading-standard-enabled">Enable course grading
+                                                    scheme</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-license">License:</label></div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <select name="course-license" id="course-license">
+                                                    <option selected="selected" value="private">Private (Copyrighted)
+                                                    </option>
+                                                    <option value="public-domain">Public Domain</option>
+                                                    <optgroup label="Creative Commons Licenses">
+                                                        <option value="cc-by">CC Attribution</option>
+                                                        <option value="cc-by-sa">CC Attribution Share Alike</option>
+                                                        <option value="cc-by-nc">CC Attribution Non-Commercial</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-copyright">File
+                                                    Copyright:</label></div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <input name="course-copyright" value="true" type="checkbox"
+                                                    id="course-copyright">
+                                                <label for="course-copyright">Copyright and license information must be
+                                                    provided for files before they are published.</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-visibility">Visibility:</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <div>If you need to make your course public please contact your
+                                                    administrator/support.
+                                                </div>
+                                                <div>
+                                                    <select name="course_visibility" id="course_visibility">
+                                                        <option selected="selected" value="course">Course</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" value="true" name="course-index"
+                                                        id="course-index">
+                                                    <label for="course-index">Include this course in the public course
+                                                        index</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="course-format">Format:</label></div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <select name="course-format" id="course-format">
+                                                    <option value="">Not Set</option>
+                                                    <option selected="selected" value="on-campus">On-Campus</option>
+                                                    <option value="online">Online</option>
+                                                    <option value="blended">Blended</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label for="mastery-path">Mastery Paths:</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <div>
+                                                    <input name="course-mastery-path" type="checkbox" value="true"
+                                                        name="course-mastery-path" id="course-mastery-path">
+                                                    <label for="course-mastery-path">Enable individual learning paths
+                                                        for
+                                                        students based on assessment</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="form-label"><label
+                                                    for="course-public-description">Description:</label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-row">
+                                                <div>
+                                                    <textarea style="height: 100px;" name="course-public-description"
+                                                        id="course-public-description"></textarea>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <div class="form-row">more options</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <div class="form-row">
+                                                <div>
+                                                    <div class="form-actions">
+                                                        <button type="submit" class="">Update Course Details</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
