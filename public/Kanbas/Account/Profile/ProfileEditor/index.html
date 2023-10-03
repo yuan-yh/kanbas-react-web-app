@@ -1,93 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="main-content-wrapper container-fluid p-2">
+    <div class="kanbas-account-profile-layout">
+        <form action="/Kanbas/Account/Profile/screen.html">
+            <div class="d-flex justify-content-around">
+                <div class="kanbas-account-profile-layout-left">
+                    <div class="profile-image-wrapper">
+                        <i class="fa-solid fa-user fa-9x"></i>
+                    </div>
+                    <div class="profile-content mt-3">
+                        <div id="profile-basic-info">
+                            <label for="username" class="form-label"><b>Name:<span
+                                        title="This field is required">*</span></b></label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                    id="username" aria-describedby="basic-addon1" value="Yueheng Yuan" required="">
+                            </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Editor Content</title>
-</head>
+                            <div>
+                                <label for="pronouns"><b>Pronouns:</b></label> <br>
+                                <select name="pronouns" id="pronouns">
+                                    <option value="none">None</option>
+                                    <option value="he">He/Him</option>
+                                    <option value="she">She/Her</option>
+                                    <option value="they">They/Them</option>
+                                    <option value="heThey">He/They</option>
+                                    <option value="sheThey">She/They</option>
+                                    <option value="heSheThey">He/She/They</option>
+                                </select>
+                            </div>
+                            <div id="profile-title">
+                                <label for="title" class="form-label"><b>Title:</b></label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="title" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3" id="profile-contact">
+                            <h3>Contact</h3>
+                            <p>No registered services, you can add some on the <a href="#">settings</a>
+                                page.
+                            </p>
+                        </div>
 
-<body>
-    <form action="/Kanbas/Account/Profile/screen.html">
-        <h1>Yueheng Yuan</h1>
-        <h2></h2>
-        <div class="profile-content">
-            <div id="profile-basic-info">
-                <p>
-                    <label>Name:<span title="This field is required">*</span>
-                        <input type="text" name="user-name" id="name" value="Yueheng Yuan" required="">
-                    </label>
-                    <label for="pronouns">Pronouns:</label>
-                    <select name="pronouns" id="pronouns">
-                        <option value="none">None</option>
-                        <option value="he">He/Him</option>
-                        <option value="she">She/Her</option>
-                        <option value="they">They/Them</option>
-                        <option value="heThey">He/They</option>
-                        <option value="sheThey">She/They</option>
-                        <option value="heSheThey">He/She/They</option>
-                    </select>
-                </p>
-            </div>
-            <div id="profile-title">
-                <p>
-                    <label>Title:
-                        <input type="text" name="user-title" value="">
-                    </label>
-                </p>
-            </div>
-            <div id="profile-contact">
-                <h3>Contact</h3>
-                <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
-            </div>
-            <div id="profile-biography">
-                <h3>Biography</h3>
-                <p>Computer scientist and software engineer.</p>
-                <div>
-                    <textarea name="user-biography" id="user-biography" cols="30"
-                        rows="5">Computer scientist and software engineer.</textarea>
+                        <div class="mb-3" id="profile-biography">
+                            <h3>Biography</h3>
+                            <label for="biography-input" class="form-label">Computer scientist
+                                and software engineer.</label>
+                            <textarea class="form-control" id="biography-input" rows="3"></textarea>
+                        </div>
+
+                        <div class="profile-link">
+                            <h3>Links</h3>
+                            <div>
+                                <p>Yueheng Yuan hasn't added any links</p>
+                            </div>
+
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col col-6"><b>Title</b></div>
+                                    <div class="col col-6"><b>URL</b></div>
+                                </div>
+                                <div class="row align-items-start">
+                                    <div class="col col-5">
+                                        <input type="text" class="form-control" placeholder="title"
+                                            aria-label="Username" id="title" aria-describedby="basic-addon1"
+                                            value="YouTube" required="">
+                                    </div>
+                                    <div class="col col-1">→</div>
+                                    <div class="col col-5"><input type="text" class="form-control" placeholder="url"
+                                            aria-label="Username" id="url" aria-describedby="basic-addon1"
+                                            value="https://www.youtube.com" required=""></div>
+                                    <div class="col col-1"><i class="fa-solid fa-delete-left"></i></div>
+                                </div>
+                            </div>
+                            <button class="btn btn-light" data-event="add-link-field">Add another
+                                link</button>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button class="btn btn-light">Cancel</button>
+                        <button class="btn btn-danger">Save Profile</button>
+                    </div>
+                </div>
+
+                <div class="float-end kanbas-account-profile-layout-right">
+                    <button data-event="cancelEditProfile" class="btn btn-light"><i class="fas fa-edit"></i>
+                        Cancel Editing</button>
                 </div>
             </div>
-            <div class="profile-link">
-                <h3>Links</h3>
-                <div>
-                    <p>Yueheng Yuan hasn't added any links</p>
-                </div>
-
-                <!-- <input type="hidden" name="delete_links" value="1"> -->
-                <div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Title</th>
-                                <th></th>
-                                <th>URL</th>
-                            </tr>
-                        </thead>
-                        <tbody id="profile_link_fields">
-                            <tr>
-
-                                <td><input type="text" maxlength="255" name="link-title" value="YouTube"></td>
-                                <td>→</td>
-                                <td><input type="url" name="link-url" value="https://www.youtube.com"></td>
-                                <td><a href="#" class="remove-link-row">Remove</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button data-event="add-link-field">Add another link</button>
-                </div>
-            </div>
-            <div>
-                <div><button>Cancel</button>
-                    <button type="submit">Save Profile</button>
-                </div>
-                <div>
-                    <button type="reset">Edit Profile</button>
-                    <button>Cancel Editing</button>
-                </div>
-            </div>
-        </div>
-    </form>
-</body>
-
-</html>
+        </form>
+    </div>
+</div>

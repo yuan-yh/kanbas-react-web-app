@@ -1,44 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Content</title>
-</head>
-
-<body>
-    <div class="header-tool">Yueheng Yuan's Profile</div>
-    <br>
-    <hr>
-    <div class="account-profile-container">
-        <table>
-            <tr valign="top">
-                <td>
-                    <div class="account-profile-info">
-                        <h1>Yueheng Yuan</h1>
-                        <p>
-                        <h2>Contact</h2>
-                        No registered services.
-                        </p>
-                        <p>
-                        <h2>Biography</h2>
-                        Computer scientist and software engineer.
-                        </p>
-                        <p>
-                        <h2>Links</h2>
-                        Not Available.
-                        </p>
+<div class="main-content-wrapper container-fluid p-2">
+    <div class="kanbas-account-profile-layout">
+        <form action="/Kanbas/Account/Profile/ProfileEditor/screen.html">
+            <div class="d-flex justify-content-around">
+                <div class="kanbas-account-profile-layout-left">
+                    <div class="profile-image-wrapper">
+                        <i class="fa-solid fa-user fa-9x"></i>
                     </div>
-                </td>
-                <td>
-                    <form action="/Kanbas/Account/Profile/ProfileEditor/screen.html">
-                        <button>Edit Profile</button>
-                    </form>
-                </td>
-            </tr>
-        </table>
-    </div>
-</body>
+                    <h1>Yueheng Yuan</h1>
+                    <p>
+                    <h2>Contact</h2>
+                    No registered services.
+                    </p>
+                    <p>
+                    <h2>Biography</h2>
+                    Computer scientist and software engineer.
+                    </p>
+                    <p>
+                    <h2>Links</h2>
+                    <div class="profile-link">
+                        <i class="fa-solid fa-link"></i>
+                        <a href="https://www.youtube.com/webdevtv"><span>YouTube</span>
 
-</html>
+                            <i class="fa-solid fa-video"></i>
+                        </a>
+                    </div>
+                    </p>
+
+                </div>
+
+                <div class="float-end kanbas-account-profile-layout-right">
+                    <button data-event="editProfile" class="hide-if-editing btn btn-light"><i class="fas fa-edit"></i>
+                        Edit
+                        Profile</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

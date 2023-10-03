@@ -1,83 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="main-content-wrapper container-fluid p-2 ms-4 me-4">
+    <div class="kanbas-assignment-content-layout">
+        <form action="/Kanbas/Courses/Assignments/screen.html">
+            <div class="">
+                <div class="kanbas-assignment-content-layout">
+                    <div class="kanbas-assignment-headerbar d-flex justify-content-end align-items-center">
+                        <button class="btn btn-light m-1"><i class="fa-solid fa-file-import"></i>Import</button>
+                        <button class="btn btn-light m-1"><i class="fa-solid fa-file-export"></i>Export</button>
+                        <button class="btn btn-light m-1"><i class="fa-solid fa-gear"></i></button>
+                    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grade Content</title>
-</head>
+                    <div class="container">
+                        <form action="/Kanbas/Courses/Grades/screen.html" id="edit-grade-form">
+                            <div class="row assignment-edit-row">
+                                <div class="col assignment-title-col">
+                                    <label for="student-name" class="form-label list-group-item-title">Student
+                                        Name</label>
+                                </div>
+                                <div class="col assignment-title-col">
+                                    <label for="assignment-name" class="form-label list-group-item-title">Assignment
+                                        Name</label>
+                                </div>
+                            </div>
 
-<body>
-    <h1></h1>
-    <h2></h2>
-    <div id="gradebook-head-toolbar">
-        <select name="gradebook" id="gradebook">
-            <option value="traditional">Gradebook</option>
-        </select>
-        <button>Import</button>
-        <select name="export" id="export">
-            <option value="current">Export</option>
-        </select>
-        <button>Configure</button>
+                            <div class="row assignment-edit-row">
+                                <div class="col assignment-title-col">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"><i
+                                                class="fa-solid fa-magnifying-glass"></i></span>
+                                        <input type="text" name="assignment-name" class="form-control" id="student-name"
+                                            placeholder="Search Students" value="">
+                                    </div>
+                                </div>
+                                <div class="col assignment-title-col">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text"><i
+                                                class="fa-solid fa-magnifying-glass"></i></span>
+                                        <input type="text" name="assignment-name" class="form-control"
+                                            id="assignment-name" placeholder="Search Assignments" value="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row assignment-edit-row">
+                                <span>
+                                    <button class="btn btn-light">
+                                        <i class="fa-solid fa-filter"></i>
+                                        Apply Filters</button></span>
+                            </div>
+
+                            <div class="row assignment-edit-row">
+                                <div class="table-responsive">
+                                    <table class="table table-striped" border="1" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Student Name</th>
+                                                <th>A1 SETUP</th>
+                                                <th>A2 HTML</th>
+                                                <th>A3 CSS</th>
+                                                <th>A4 BOOTSTRAP</th>
+                                                <th>A5 JS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody align="center">
+                                            <tr>
+                                                <td>Brown</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Drake</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                                <td><input type="number" class="form-control" name="grade" id="grade"
+                                                        placeholder="100"></td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kelly</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Wayne</td>
+                                                <td><input type="number" class="form-control" name="grade" id="grade"
+                                                        placeholder="100"></td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot></tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-
-    <div id="gradebook-app">
-        <p>
-        <h3>Student Names</h3>
-        <input type="text" name="studentName" id="studentName" placeholder="Search Students"
-            title="Type the name of the student to search for">
-        <h3>Assignment Names</h3>
-        <input type="text" name="assignmentName" id="assignmentName" placeholder="Search Assignments"
-            title="Type the name of the assignment to search for">
-        </p>
-        <button>Apply Filter</button>
-    </div>
-
-    <div id="gradebook-grid">
-        <br>
-        <table border="1" width="100%">
-            <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>A1 SETUP</th>
-                    <th>A2 HTML</th>
-                    <th>A3 CSS</th>
-                    <th>A4 BOOTSTRAP</th>
-                </tr>
-            </thead>
-            <tbody align="center">
-                <tr>
-                    <td>Brown</td>
-                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
-                </tr>
-                <tr>
-                    <td>Drake</td>
-                    <td>100</td>
-                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
-                    <td>100</td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Kelly</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
-                    <td>100</td>
-                </tr>
-                <tr>
-                    <td>Wayne</td>
-                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
-                    <td>100</td>
-                    <td><input type="number" name="grade" id="grade" placeholder="100"></td>
-                    <td>100</td>
-                </tr>
-            </tbody>
-            <tfoot></tfoot>
-        </table>
-    </div>
-</body>
-
-</html>
+</div>

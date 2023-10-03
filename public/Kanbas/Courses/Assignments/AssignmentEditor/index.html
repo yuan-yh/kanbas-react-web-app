@@ -1,155 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="main-content-wrapper container-fluid p-2 ms-4 me-4">
+    <div class="kanbas-assignment-content-layout">
+        <form action="/Kanbas/Courses/Assignments/screen.html">
+            <div class="">
+                <div class="kanbas-assignment-content-layout">
+                    <div class="kanbas-assignment-headerbar d-flex justify-content-end align-items-center">
+                        <span class="assignment-list-item-logo">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Published
+                        </span>
+                        <button class="btn btn-light m-1"><i class="fa-solid fa-list"></i></button>
+                    </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AssignmentEditor Content</title>
-</head>
+                    <div class="container">
+                        <form action="/Kanbas/Courses/Assignments/screen.html" id="edit-assignment-form">
 
-<body>
-    <div class="header-bar">
-        <select>
-            <option value="speed-grader">SpeedGrader</option>
-        </select>
+                            <div class="row assignment-edit-row">
+                                <label for="assignment-name" class="form-label list-group-item-title">Assignment
+                                    Name</label>
+                                <input type="text" name="assignment-name" class="form-control" id="assignment-name"
+                                    placeholder="Assignment Name" value="A1 - ENV + HTML">
+                            </div>
+
+                            <div class="row assignment-edit-row">
+                                <textarea name="assignment-description" class="form-control" id="assignment-description"
+                                    cols="22" rows="2" placeholder="This is the assignment description."
+                                    autocomplete="on"></textarea>
+                            </div>
+
+                            <div class="row assignment-edit-row">
+                                <div class="col assignment-title-col col-4">
+                                    <label for="assignment-point"
+                                        class="form-label list-group-item-title">Points</label>
+                                </div>
+                                <div class="col assignment-edit-col">
+                                    <input type="number" class="form-control" name="assignment-point"
+                                        id="assignment-point" placeholder="100">
+                                </div>
+                            </div>
+
+                            <div class="row assignment-edit-row">
+                                <div class="col assignment-title-col col-4">
+                                    <label for="assignment-group" class="form-label list-group-item-title">Assignment
+                                        Group</label>
+                                </div>
+                                <div class="col assignment-edit-col">
+                                    <select class="form-select" id="assignment-group" name="assignment-group">
+                                        <option value="assignment">Assignments</option>
+                                        <option value="quiz">Quizzes</option>
+                                        <option value="exam">Exams</option>
+                                        <option value="project">Project</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row assignment-edit-row">
+                                <div class="col assignment-title-col col-4">
+                                    <label for="assignment-grading-type"
+                                        class="form-label list-group-item-title">Display Grade as</label>
+                                </div>
+                                <div class="col assignment-edit-col">
+                                    <select class="form-select" id="assignment-grading-type"
+                                        name="assignment-grading-type">
+                                        <option value="percent">Percentage</option>
+                                        <option value="pass-fail">Complete/Incomplete</option>
+                                        <option value="points" selected="">Points</option>
+                                        <option value="letter-grade">Letter Grade</option>
+                                        <option value="gpa-scale">GPA Scale</option>
+                                        <option value="not-graded">Not Graded</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row assignment-edit-row">
+                                <div class="col assignment-title-col col-4">
+                                    <label for="assignment-submission-type"
+                                        class="form-label list-group-item-title">Submission Type</label>
+                                </div>
+                                <div class="col assignment-edit-col">
+                                    <select class="form-select" id="assignment-submission-type"
+                                        name="assignment-submission-type">
+                                        <option value="online">Online</option>
+                                        <option value="on-paper">On Paper</option>
+                                        <option value="external-tool">External Tool</option>
+                                    </select>
+
+                                    <div>Online Entry Options
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="text-entry"
+                                                value="text-entry" id="text-entry" checked>
+                                            <label class="form-check-label" for="text-entry">
+                                                Text Entry
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="website"
+                                                value="website" id="website" checked>
+                                            <label class="form-check-label" for="website">
+                                                Website URL
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="recording"
+                                                value="recording" id="recording" checked>
+                                            <label class="form-check-label" for="recording">
+                                                Media Recordings
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="annotation"
+                                                value="annotation" id="annotation">
+                                            <label class="form-check-label" for="annotation">
+                                                Student Annotation
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="file" value="file"
+                                                id="file">
+                                            <label class="form-check-label" for="file">
+                                                File Uploads
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row assignment-edit-row">
+                                <div class="col assignment-title-col col-4">
+                                    <label for="assignment-grading-type"
+                                        class="form-label list-group-item-title">Assign</label>
+                                </div>
+                                <div class="col assignment-edit-col" id="assignment-assign-to-window">
+                                    <div class="container">
+                                        <div class="row assignment-edit-row p-3">
+                                            <div class="assignment-title-col">
+                                                <label for="assignment-assign-to"
+                                                    class="form-label list-group-item-title">Assign
+                                                    to</label>
+                                            </div>
+                                            <div class="assignment-edit-col">
+                                                <input type="text" class="form-control" name="assignment-assign-to"
+                                                    id="assignment-assign-to">
+                                            </div>
+                                        </div>
+
+                                        <div class="row assignment-edit-row">
+                                            <div class="assignment-title-col">
+                                                <label for="due-date"
+                                                    class="form-label list-group-item-title">Due</label>
+                                            </div>
+                                            <div class="assignment-edit-col">
+                                                <input type="date" class="form-control" name="due-date" id="due-date"
+                                                    value="2023-09-17" min="2023-09-01" max="2023-12-31">
+                                            </div>
+                                        </div>
+
+                                        <div class="row assignment-edit-row">
+                                            <div class="col">
+                                                <div class="assignment-title-col">
+                                                    <label for="start-date"
+                                                        class="form-label list-group-item-title">Available
+                                                        from</label>
+                                                </div>
+                                                <div class="assignment-edit-col">
+                                                    <input type="date" class="form-control" name="start-date"
+                                                        id="start-date" value="2023-09-01" min="2023-09-01"
+                                                        max="2023-12-31">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="assignment-title-col">
+                                                    <label for="start-date"
+                                                        class="form-label list-group-item-title">Available
+                                                        from</label>
+                                                </div>
+                                                <div class="assignment-edit-col">
+                                                    <input type="date" class="form-control" name="end-date"
+                                                        id="end-date" value="2023-12-31" min="2023-09-01"
+                                                        max="2023-12-31">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row assignment-submit-row">
+                                            <button class="btn btn-light p-0">+ Add</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="assignment-action-button-row float-end">
+                                <button class="btn btn-light">Cancel</button>
+                                <button class="btn btn-danger">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-    <hr>
-
-    <form action="/Kanbas/Courses/Assignments/screen.html" id="edit-assignment-form">
-        <div class="edit-assignment-container">
-            <div class="edit-description">
-                <label for="assignment-name"><b>Assignment Name</b></label>
-                <p>
-                    <input type="text" name="assignment-name" id="assignment-name" placeholder="Assignment Name"
-                        value="A1 - ENV + HTML">
-                </p>
-                <p>
-                    <textarea name="assignment-description" id="assignment-description" cols="22" rows="2"
-                        placeholder="This is the assignment description." autocomplete="on"></textarea>
-                </p>
-                <p>Points <br>
-                    <input type="number" name="assignment-point" id="assignment-point" placeholder="100">
-                </p>
-            </div>
-
-            <div class="assignment-group-selector">
-                <p>
-                    <label for="assignment-group">Assignment Group</label>
-                    <br>
-                    <select id="assignment-group" name="assignment_group_id">
-                        <option value="assignment">Assignments</option>
-                        <option value="quiz">Quizzes</option>
-                        <option value="exam">Exams</option>
-                        <option value="project">Project</option>
-                    </select>
-                </p>
-            </div>
-
-            <div class="assignment-grading-type-selector">
-                <p>
-                    <label for="assignment-grading-type">Display Grade as</label>
-                    <br>
-                    <select id="assignment-grading-type" name="assignment-grading-type">
-                        <option value="percent">Percentage</option>
-                        <option value="pass-fail">Complete/Incomplete</option>
-                        <option value="points" selected="">Points</option>
-                        <option value="letter-grade">Letter Grade</option>
-                        <option value="gpa-scale">GPA Scale</option>
-                        <option value="not-graded">Not Graded</option>
-                    </select>
-                </p>
-            </div>
-
-            <div class="assignment-submission-field">
-                <p>
-                    <label for="assignment-submission-type">Submission Type</label>
-                    <br>
-                    <select id="assignment-submission-type" name="assignment-submission-type">
-                        <option value="online">Online</option>
-                        <option value="on-paper">On Paper</option>
-                        <option value="external-tool">External Tool</option>
-                    </select>
-                </p>
-                <p>
-                <div>Online Entry Options</div>
-                <div>
-                    <input type="checkbox" name="text-entry" id="text-entry" value="text-entry">
-                    <label for="text-entry">Text Entry</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="website" id="website" value="website">
-                    <label for="website">Website URL</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="recording" id="recording" value="recording">
-                    <label for="recording">Media Recordings</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="annotation" id="annotation" value="annotation">
-                    <label for="annotation">Student Annotation</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="file" id="file" value="file">
-                    <label for="file">File Uploads</label>
-                </div>
-                </p>
-
-                <p>
-                    <label for="assignment-submission-attempt">Submission Attempts</label>
-                    <br>
-                    <select name="assignment-submission-attempt" id="assignment-submission-attempt">
-                        <option value="unlimited">Unlimited</option>
-                        <option value="one">Once</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="assignment-plagiarism-review">Plagiarism Review</label>
-                    <br>
-                    <select name="assignment-plagiarism-review" id="assignment-plagiarism-review">
-                        <option value="none">None</option>
-                        <option value="one">Once</option>
-                    </select>
-                </p>
-                <p>
-                <div>Group Assignment</div>
-                <input type="checkbox" name="assign-group" id="assign-group" value="group">
-                <label for="assign-group">This is a group assignment</label>
-                </p>
-                <p>
-                <div>Peer Reviews</div>
-                <input type="checkbox" name="assign-peer-review" id="assign-peer-review" value="peer-review">
-                <label for="assign-peer-review">Require Peer Reviews</label>
-                </p>
-            </div>
-
-            <div class="assignment-assign-date">
-                <p>Assign<br>
-                    <label for="assign-object">Assign to</label> <br>
-                    <input type="text" name="assign-object" id="assign-object" placeholder="Everyone" value="Everyone">
-                </p>
-                <p>
-                    <label for="due-date">Due</label> <br>
-                    <input type="date" name="due-date" id="due-date" value="2023-09-17" min="2023-09-01"
-                        max="2023-12-31">
-                </p>
-                <p>
-                    <label for="start-date">Available from</label> <br>
-                    <input type="date" name="start-date" id="start-date" value="2023-09-01" min="2023-09-01"
-                        max="2023-12-31">
-                </p>
-                <p>
-                    <label for="end-date">Until</label> <br>
-                    <input type="date" name="end-date" id="end-date" value="2023-12-31" min="2023-09-01"
-                        max="2023-12-31">
-                </p>
-            </div>
-        </div>
-
-        <div class="assignment-action-button">
-            <button>Cancel</button>
-            <button>Save</button>
-        </div>
-    </form>
-</body>
-
-</html>
+</div>
