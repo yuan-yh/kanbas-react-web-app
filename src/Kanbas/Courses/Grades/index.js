@@ -39,13 +39,12 @@ function Grades() {
                     <div class="row">
                         <div class="col">
                             <div class="input-group mb-3">
-
-                                <input type="text" name="assignment-name" class="form-control" id="student-name" placeholder="Search Students" value="" />
+                                <input type="text" name="assignment-name" class="form-control" id="student-name" placeholder="Search Students" />
                             </div>
                         </div>
                         <div class="col">
                             <div class="input-group mb-3">
-                                <input type="text" name="assignment-name" class="form-control" id="assignment-name" placeholder="Search Assignments" value="" />
+                                <input type="text" name="assignment-name" class="form-control" id="assignment-name" placeholder="Search Assignments" />
                             </div>
                         </div>
                     </div>

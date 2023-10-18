@@ -22,11 +22,14 @@ function ModuleList() {
                             </div>
                             {
                                 module.lessons && (
-                                    <ul className="list-group">
+                                    <ul className="list-group border-start border-2 border-success">
                                         {
                                             module.lessons.map((lesson, index) => (
                                                 <li key={index} className="list-group-item">
-                                                    <h4>{lesson.name}</h4>
+                                                    <span class="float-end">
+                                                        {<FaCheck />} {<FaEllipsisV />}
+                                                    </span>
+                                                    <h4>{lesson.name} </h4>
                                                     <p>{lesson.description}</p>
                                                 </li>
                                             ))
@@ -78,7 +81,7 @@ function ModuleList() {
 
                     ))
             }
-        </ul>
+        </ul >
     );
 }
 export default ModuleList;
