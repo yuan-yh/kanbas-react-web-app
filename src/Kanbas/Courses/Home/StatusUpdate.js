@@ -9,36 +9,29 @@ function StatusUpdate() {
             <div className="container mb-2">
 
                 <a href="#" className="btn btn-light text-start w-100 mb-1">
-                    {<FaFileImport />}
-                    Import Existing Content
+                    {<FaFileImport />} Import Existing Content
                 </a>
                 <a href="#" className="btn btn-light text-start w-100 mb-1">
-                    {<FaFileImport />}
-                    Import From Commons
+                    {<FaFileImport />} Import From Commons
                 </a>
                 <a href="#" className="btn btn-light text-start w-100 mb-1">
-                    <BiTargetLock />
-                    Choose Home Page
+                    {<BiTargetLock />} Choose Home Page
                 </a>
 
                 <a href="#" className="btn btn-light text-start w-100 mb-1">
-                    <FaChartBar />
-                    View Course Stream
+                    {<FaChartBar />} View Course Stream
                 </a>
 
                 <a href="#" className="btn btn-light text-start w-100 mb-1">
-                    <HiOutlineSpeakerphone />
-                    New Announcement
+                    {<HiOutlineSpeakerphone />} New Announcement
                 </a>
 
                 <a href="#" className="btn btn-light text-start w-100 mb-1">
-                    <FaChartBar />
-                    New Analytics
+                    {<FaChartBar />} New Analytics
                 </a>
 
                 <a href="#" className="btn btn-light text-start w-100 mb-1">
-                    <FaRegBell />
-                    View Course Notifications
+                    {<FaRegBell />} View Course Notifications
                 </a>
             </div>
 
@@ -68,9 +61,9 @@ function StatusUpdate() {
                 </div>
 
                 <div className="row mt-2">
-                    <div className="d-flex justify-content-between mb-0">
+                    <div className="d-flex justify-content-between align-items-center mb-0">
                         <h6>Coming Up</h6>
-                        <div className="d-flex align-items-center">
+                        <div className="">
                             {<BsCalendarMinus />} View Calendar
                         </div>
                     </div>
