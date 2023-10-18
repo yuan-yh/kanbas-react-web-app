@@ -1,0 +1,155 @@
+body {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.kanbas-sidebar {
+    grid-area: sidebar;
+    position: sticky
+}
+
+#kanbas-navigation-container {
+    width: 84px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    background-color: black;
+}
+
+.nav-link {
+    padding: 7px 0;
+}
+
+.nav-item-logo {
+    width: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: red;
+}
+
+.nav-item-logo-img {
+    max-width: 100%;
+}
+
+.nav-item-text {
+    position: static;
+    font-size: 0.875rem;
+    left: auto;
+    top: auto;
+    text-align: center;
+    display: block;
+    line-height: 1.4;
+    border-radius: 0;
+    margin: 3px 0 0;
+    padding: 0;
+    background: transparent;
+    color: white;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.kanbas-nav-item-selected,
+.kanbas-nav-item-selected .nav-item-text {
+    background-color: white;
+    color: red;
+}
+
+.wrapper {
+    margin-left: 84px;
+}
+
+.account-sidebar-wrapper {
+    position: sticky;
+    padding: 0 24px;
+    width: 192px;
+}
+
+.sidebar-item-text {
+    color: red;
+}
+
+.sidebar-nav-item-selected .sidebar-item-text {
+    color: black;
+    border-left: 2px solid black;
+    padding-left: 8px;
+}
+
+.kanbas-dashboard-headbar,
+.kanbas-dashboard-publish-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border-bottom: 1px solid #c7cdd1; */
+    background: rgba(255, 255, 255, .95);
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    position: sticky;
+}
+
+.kanbas-dashboard-publish-title {
+    border-bottom: 1px solid #c7cdd1;
+}
+
+.kanbas-dashboard-main-wrapper {
+    padding: 10px 2px 0 2px;
+}
+
+.kanbas-dashboard-card {
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    width: 262px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 36px 0 0 36px;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.kanbas-course-background {
+    height: 146px;
+}
+
+#kanbas-course-1 .kanbas-course-background {
+    background-color: #cdb4db;
+}
+
+#kanbas-course-2 .kanbas-course-background {
+    background-color: #ffc8dd;
+}
+
+#kanbas-course-3 .kanbas-course-background {
+    background-color: #ffafcc;
+}
+
+#kanbas-course-4 .kanbas-course-background {
+    background-color: #bde0fe;
+}
+
+#kanbas-course-5 .kanbas-course-background {
+    background-color: #a2d2ff;
+}
+
+#kanbas-course-6 .kanbas-course-background {
+    background-color: #e9edc9;
+}
+
+#kanbas-course-7 .kanbas-course-background {
+    background-color: #83c5be;
+}
+
+.kanbas-course-title {
+    padding: 12px 18px 0;
+}
