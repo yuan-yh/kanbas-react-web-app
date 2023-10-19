@@ -33,8 +33,8 @@ function Courses() {
 
             <div className="row">
                 <div className="d-flex flex-row mt-2">
-                    <div>
-                        Term.{course.startDate}
+                    <div className="text-body-secondary">
+                        Term. {course.startDate}
                         <CourseNavigation />
                     </div>
 
