@@ -1,0 +1,50 @@
+body {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+#kanbas-navigation-container {
+    width: 84px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    background-color: black;
+}
+
+.nav-link {
+    padding: 7px 0;
+}
+
+.nav-item-logo {
+    width: 26px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: red;
+}
+
+.nav-item-logo-img {
+    max-width: 100%;
+}
+
+.nav-item-text {
+    position: static;
+    font-size: 0.875rem;
+    left: auto;
+    top: auto;
+    text-align: center;
+    display: block;
+    line-height: 1.4;
+    border-radius: 0;
+    margin: 3px 0 0;
+    padding: 0;
+    background: transparent;
+    color: white;
+    white-space: normal;
+    word-wrap: break-word;
+}
