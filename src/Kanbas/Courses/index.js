@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate, Route, Routes, useParams, useLocation, Link } from 'react-router-dom';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { FiMenu } from 'react-icons/fi';
 import db from '../../Kanbas/Database';
 import CourseNavigation from '../CourseNavigation/index.js';
 import Modules from './Modules';
@@ -23,7 +23,7 @@ function Courses({ courses }) {
           <ul className="breadcrumb" style={{ fontSize: '20px', color: 'red' }}>
             <li className="breadcrumb-item" aria-current="page">
               <span style={{ paddingRight: '10px' }}>
-                <GiHamburgerMenu />
+                <FiMenu />
               </span>
               <span style={{ paddingRight: '10px' }}>
                 <Link to={'Home'} style={{ color: 'red', textDecoration: 'none' }}>

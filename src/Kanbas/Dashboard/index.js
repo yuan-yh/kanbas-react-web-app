@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import db from "../Database";
 import { FaEllipsisV } from "react-icons/fa";
 import "./index.css";
-import image from "../Image/img1.jpg"
+import image from "../Image/courseCard.jpg"
 import { useState } from "react";
 
 function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, updateCourse }) {

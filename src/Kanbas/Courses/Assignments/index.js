@@ -51,10 +51,12 @@ function Assignments() {
             <FaPlus className="wd-icon" />
             Group
           </button>
-          <button className="btn btn-danger assignments-button" onClick={handleAddAssignment}>
-            <FaPlus className="wd-icon" />
-            Assignment
-          </button>
+          <Link to={`/Kanbas/Courses/${courseId}/AssignmentEditorNew`}>
+            <button className="btn btn-danger assignments-button" onClick={handleAddAssignment}>
+              <FaPlus className="wd-icon" />
+              Assignment
+            </button>
+          </Link>
           <button className="btn btn-light assignments-button">
             <FaEllipsisV className="wd-icon" />
           </button>

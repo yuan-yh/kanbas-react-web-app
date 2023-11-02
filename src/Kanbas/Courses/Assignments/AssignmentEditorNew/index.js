@@ -32,7 +32,7 @@ function AssignmentEditorNew() {
         type="text"
         value={assignment.title}
         onChange={(e) => setAssignment({ ...assignment, title: e.target.value })}
-        className="form-control"
+        className="form-control mb-2"
       />
       <h6>Description</h6>
       <textarea
@@ -40,7 +40,7 @@ function AssignmentEditorNew() {
         onChange={(e) =>
           setAssignment({ ...assignment, description: e.target.value })
         }
-        className="form-control"
+        className="form-control mb-2"
       />
       <h6>Due Date</h6>
       <input
@@ -49,7 +49,7 @@ function AssignmentEditorNew() {
         onChange={(e) =>
           setAssignment({ ...assignment, dueDate: e.target.value })
         }
-        className="form-control"
+        className="form-control mb-2"
       />
       <h6>Available From Date</h6>
       <input
@@ -58,7 +58,7 @@ function AssignmentEditorNew() {
         onChange={(e) =>
           setAssignment({ ...assignment, availableFromDate: e.target.value })
         }
-        className="form-control"
+        className="form-control mb-2"
       />
       <h6>Available Until Date</h6>
       <input
@@ -67,13 +67,13 @@ function AssignmentEditorNew() {
         onChange={(e) =>
           setAssignment({ ...assignment, availableUntilDate: e.target.value })
         }
-        className="form-control"
+        className="form-control mb-2"
       />
       <div className="float-end">
-        <Link to={`/Kanbas/Courses/${courseId}/Assignments`} className="btn btn-light">
+        <Link to={`/Kanbas/Courses/${courseId}/Assignments`} className="btn btn-light m-1">
           Cancel
         </Link>
-        <button onClick={handleSave} className="btn btn-danger me-2">
+        <button onClick={handleSave} className="btn btn-danger m-1">
           Save
         </button>
       </div>
