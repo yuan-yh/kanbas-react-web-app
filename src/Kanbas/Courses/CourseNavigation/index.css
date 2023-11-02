@@ -1,30 +1,46 @@
-.wd-course-navigation {
-  background-color: white;
-  list-style: none;
-  padding: 0px;
-  width: 120px;
-  margin: 0px;
-  margin-left: 20px;
-  border-radius: 0px;
-  border: none;
-}
-.wd-course-navigation a {
-  padding-left: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: none;
-}
-.wd-course-navigation a.active {
-  border-left: 2px solid black;
-  background-color: white;
-}
-.wd-course-navigation a.active {
-  color: black;
+.courses-navigation-side-bar {
+    float: left;
+    width: 190px;
 }
 
-.wd-course-navigation a {
-  color: red;
-  text-decoration: none;
+.courses-navigation-side-bar .courses-navigation-side-bar-title {
+    margin-left: 25px;
+    font-size: small;
+    font-style: italic;
+}
+
+.courses-navigation-side-bar .truncated-text {
+    display: inline-block;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.courses-navigation-side-bar .list-group {
+    width: 165px;
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 0 15px 0 0 !important;
+    text-align: left !important;
+    padding: 0 !important;
+    margin-left: 17px;
+    --bs-list-group-item-padding-x: 8px !important;
+    --bs-list-group-item-padding-y: 8px !important;
+}
+
+.courses-navigation-side-bar  .list-group-item {
+    background-color: white !important;
+    color: red !important;
+    border-width: 0 !important; /* Set border-width to 0 */
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.courses-navigation-side-bar .list-group-item.active {
+    background-color: white !important;
+    color: black !important;
+    border-left: 2px black solid !important;
+    font-size: 0.85rem;
+    font-weight: 300;
 }

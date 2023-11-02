@@ -1,45 +1,89 @@
-.wd-kanbas-navigation .wd-icon {
-  font-size: 2em;
+.kanbas-navigation-list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  font-size: 14px;
+  
 }
 
-.wd-kanbas-navigation .list-group-item:first-child,
-.wd-kanbas-navigation .list-group-item:last-child,
-.wd-kanbas-navigation .list-group-item.active:last-child,
-.wd-kanbas-navigation.list-group {
-  border-radius: 0px;
+.northeastern-logo{
+  padding-top: 5px;
+  width: 10px;
+  height: 1.0;
 }
 
-.wd-kanbas-navigation {
-  background-color: black;
-  list-style: none;
-  padding: 0px;
-  width: 80px;
-  margin: 0px;
-}
-
-.wd-kanbas-navigation a {
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 0.8em;
-  text-align: center;
-  background-color: black;
-  border: none;
-}
-
-.wd-kanbas-navigation a.active {
-  background-color: white;
-}
-.wd-kanbas-navigation a.active {
+.kanbas-navigation-icon {
+  margin-right: 5px;
   color: red;
+  font-size: xx-large;
+  justify-content: center;
 }
 
-.wd-kanbas-navigation a {
+.kanbas-navigation-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* .list-group-item {
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0.6rem 0.6rem;
   color: white;
   text-decoration: none;
+  background-color:black;
+  border: 0;
+} */
+
+.kanbas-navigation-list-group .list-group-item.active {
+  background-color: white !important;
+  border-color: transparent !important;
+  border: none !important;
+  color: red !important;
 }
 
-/* .wd-kanbas-navigation a i {
+
+.menu-item-text {
+  transition: none;
+  position: static;
+  left: auto;
+  top: auto;
+  transform: none;
+  opacity: 1;
+  text-align: center;
+  display: block;
+  line-height: 1.0;
+  border-radius: 0;
+  color: white !important;
+  background-color: black !important;
+  white-space: normal;
+  font-size: 0.875rem;
+  font: arial;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+
+}
+
+.custom-icon-image {
+  width: 10px; 
+  height: 10px; 
+  /* border-radius: 50%; Optional: For a circular shape */
+}
+
+
+.list-group-item-action {
+  border-radius: 0% !important;
+  border: 0 !important;
   color: red;
-  font-size: 2em;
-  margin-bottom: 5px;
-} */
+  text-decoration: none;
+  text-align: center !important;
+}
+
+.list-group-item-action:hover{
+  background-color: white !important;
+  color: red !important;
+
+} 

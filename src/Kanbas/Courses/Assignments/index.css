@@ -1,0 +1,79 @@
+/* .assignments {
+    padding: 0 10px;
+    float: left;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+} */
+
+.assignments .assignments-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.assignments .assignments-button {
+    margin: 2px;
+    border-radius: 3px !important;
+}
+
+.assignments .assignment-list {
+    margin: 10px;
+}
+
+.assignment-list .list-group-item:first-child {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.assignment-list .list-group-item:last-child {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.assignment-list .courses-assignment-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.assignment-list .icon-margin {
+    margin-right: 14px;
+}
+
+.assignment-list .icon-margin-small {
+    margin-right: 4px;
+}
+
+.assignment-list .assignments-text {
+    font-weight: bold;
+}
+
+.assignment-list .assignment-title a {
+    color: black;
+    text-decoration: none;
+}
+
+.assignment-list .assignments-title-total {
+    border: 1px rgb(168, 159, 159) solid !important;
+}
+
+.assignment-list .courses-assignments-list-item-green-border {
+    border-left: 4px solid green;
+}
+
+.assignments .delete-confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+    z-index: 1000;
+    /* Ensure the overlay is displayed on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    /* Allows interaction with the overlay while preventing interaction with content beneath */
+}
