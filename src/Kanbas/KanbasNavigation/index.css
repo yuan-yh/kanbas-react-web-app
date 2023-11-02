@@ -1,13 +1,5 @@
 .wd-kanbas-navigation .wd-icon {
   font-size: 2em;
-  fill: red;
-}
-
-.wd-kanbas-navigation .wd-logo {
-  max-width: 100px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .wd-kanbas-navigation .list-group-item:first-child,
@@ -22,16 +14,7 @@
   list-style: none;
   padding: 0px;
   width: 80px;
-
-  /* margin: 0px; */
-  /* box-sizing: border-box; */
-  position: sticky;
-  /* top: 0; */
-  /* left: 0; */
-  height: 100%;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* z-index: 100; */
+  margin: 0px;
 }
 
 .wd-kanbas-navigation a {
@@ -45,6 +28,8 @@
 
 .wd-kanbas-navigation a.active {
   background-color: white;
+}
+.wd-kanbas-navigation a.active {
   color: red;
 }
 
@@ -53,8 +38,8 @@
   text-decoration: none;
 }
 
-.wd-kanbas-navigation a i {
+/* .wd-kanbas-navigation a i {
   color: red;
   font-size: 2em;
   margin-bottom: 5px;
-}
+} */
