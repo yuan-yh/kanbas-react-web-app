@@ -38,37 +38,41 @@ function Dashboard() {
     fetchCourses();
   }, []);
   return (
-    <div>
+    <div className="ms-2">
       <h1>Dashboard</h1>
       <hr />
       <h2>Published Courses ({courses.length})</h2>
       <input
         type="text"
-        placeholder="Course Name"
+        placeholder="New Course Name"
         value={course.name}
         onChange={(e) => setCourse({ ...course, name: e.target.value })}
       />
-      <button onClick={updateCourse} className="btn btn-success">
-        Update
-      </button>
-      <button onClick={addCourse} className="btn btn-success">
+      <button onClick={addCourse} className="btn btn-success ms-2">
         Add
+      </button>
+      <button onClick={updateCourse} className="btn btn-primary ms-2">
+        Update
       </button>
       <div class="row">
         <div class="row row-cols-1 row-cols-md-5 g-4">
           {courses.map((course, index) => (
             <div class="col" style={{ width: 300 }}>
               <div class="card">
-                <img src="/images/react.png" class="card-img-top" alt="..." />
+                <img src="/images/cat.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
+                  <></>
                   <button
                     onClick={() => deleteCourse(course._id)}
                     className="btn btn-danger float-end"
                   >
                     Delete
                   </button>
-                  <button onClick={() => setCourse(course)}>Edit</button>
-                  <h5 class="card-title">{course.name}</h5>
+                  <button
+                    onClick={() => setCourse(course)}
+                    className="btn btn-warning "
+                  >Edit</button>
+                  <h5 class="card-title" style={{ height: 40 }}>{course.name}</h5>
 
                   <Link
                     key={course._id}
