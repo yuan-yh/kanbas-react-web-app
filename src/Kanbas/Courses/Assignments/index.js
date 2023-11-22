@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import db from "../../Database";
+// import db from "../../Database";
 import * as client from "./client";
 
 function Assignments() {
@@ -40,8 +40,8 @@ function Assignments() {
         .filter((assignment) => assignment.course === courseId)
         .map((assignment, index) => (
           <li key={index} className="list-group-item">
-            <h3>{assignment.name}</h3>
-            <p>{assignment.description}</p>
+            <h3>{assignment.title}</h3>
+            {/* <p>{assignment.description}</p>
             {assignment.lessons && (
               <ul className="list-group">
                 {assignment.lessons.map((lesson, index) => (
@@ -51,7 +51,7 @@ function Assignments() {
                   </li>
                 ))}
               </ul>
-            )}
+            )} */}
           </li>
         ))}
     </ul>
