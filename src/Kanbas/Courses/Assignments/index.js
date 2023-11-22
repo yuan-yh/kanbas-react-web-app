@@ -30,7 +30,7 @@ function Assignments() {
       <li className="list-group-item">
         <button onClick={addAssignment}>Add</button>
         <input
-          value={assignment.name}
+          value={assignment.title}
           onChange={(e) => setAssignment({ ...assignment, name: e.target.value })}
           className="form-control"
           placeholder="Assignment Name"
