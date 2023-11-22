@@ -31,7 +31,7 @@ function Assignments() {
         <button onClick={addAssignment}>Add</button>
         <input
           value={assignment.title}
-          onChange={(e) => setAssignment({ ...assignment, name: e.target.value })}
+          onChange={(e) => setAssignment({ ...assignment, title: e.target.value })}
           className="form-control"
           placeholder="Assignment Name"
         />
