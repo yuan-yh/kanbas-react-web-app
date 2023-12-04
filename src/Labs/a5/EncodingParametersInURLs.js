@@ -5,11 +5,11 @@ function EncodingParametersInURLs() {
   const [a, setA] = useState(34);
   const [b, setB] = useState(23);
 
-  const API_BASE = "http://localhost:4000/a5";
+  const API_BASE = "https://kanbas-node-server-app-t170.onrender.com/a5";
 
   const [welcome, setWelcome] = useState("");
   const fetchWelcome = async () => {
-    const response = await axios.get("http://localhost:4000/hello");
+    const response = await axios.get("https://kanbas-node-server-app-t170.onrender.com/a5/hello");
     setWelcome(response.data);
   };
 
