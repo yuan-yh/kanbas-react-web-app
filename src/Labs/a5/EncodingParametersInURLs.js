@@ -63,18 +63,18 @@ function EncodingParametersInURLs() {
         Add {a} + {b}
       </a>
       <a
-        href={`${API_BASE}/a5/subtract/${a}/${b}`}
+        href={`${API_BASE}/subtract/${a}/${b}`}
         className="btn btn-danger">
         Substract {a} - {b}
       </a>
       <h3>Query Parameters</h3>
       <a
-        href={`${API_BASE}/a5/calculator?operation=add&a=${a}&b=${b}`}
+        href={`${API_BASE}/calculator?operation=add&a=${a}&b=${b}`}
         className="btn btn-primary">
         Add {a} + {b}
       </a>
       <a
-        href={`${API_BASE}/a5/calculator?operation=subtract&a=${a}&b=${b}`}
+        href={`${API_BASE}/calculator?operation=subtract&a=${a}&b=${b}`}
         className="btn btn-danger">
         Substract {a} - {b}
       </a>
