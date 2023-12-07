@@ -3,7 +3,7 @@ import axios from "axios";
 const request = axios.create({
   withCredentials: true,
 });
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = "https://kanbas-node-server-app-t170.onrender.com/api";
 // export const BASE_API = process.env.REACT_APP_BASE_API_URL;
 export const USERS_API = `${API_BASE}/users`;
 console.log(USERS_API);
