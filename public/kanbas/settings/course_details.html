@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .course-detail-header {
+        margin-bottom: 30px;
+      }
+
+      .course-detail-container table {
+        border-collapse: separate;
+        border-spacing: 10px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="course-detail-container">
+      <h2 class="course-detail-header">Course Details</h2>
+
+      <table class="course-detail-table">
+        <tbody>
+          <tr>
+            <td>Image:</td>
+            <td>
+              <img
+                width="400px"
+                src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td>CS4550 12631 Web developement</td>
+          </tr>
+          <tr>
+            <td>Course Code</td>
+            <td>CS4550 12631</td>
+          </tr>
+          <tr>
+            <td>Blueprint Course:</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Course Template:</td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Enable course as a Course Template
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Time Zone:</td>
+            <td>
+              <select class="form-select">
+                <option selected="edit">
+                  Eastern Time (US & Canada)(-05:00/-04:00)
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>SIS ID:</td>
+            <td>CS4550.12322.232145</td>
+          </tr>
+          <tr>
+            <td>Subaccount:</td>
+            <td><a href="#">CS Undergrad</a></td>
+          </tr>
+          <tr>
+            <td>Term:</td>
+            <td>102510_1 Fall 2023 Semester Full Term</td>
+          </tr>
+          <tr>
+            <td>Participation:</td>
+            <td>
+              <select class="form-select">
+                <option selected="edit">
+                  Eastern Time (US & Canada)(-05:00/-04:00)
+                </option>
+              </select>
+              <p>
+                Course Participations is limited to term start and end dates.
+              </p>
+              <h3>Start</h3>
+              <label>
+                <input type="date" name="Start" />
+              </label>
+              <h3>End</h3>
+              <label>
+                <input type="date" name="End" />
+              </label>
+              <div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Restrict students from viewing course before term start date
+                  </label>
+                </div>
+              </div>
+              <div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Restrict students from viewing course after term end date
+                  </label>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Default due time:</td>
+            <td>
+              <select class="form-select">
+                <option selected="edit">Account default(11:59pm)</option>
+              </select>
+
+              <p>
+                This influences the user interface for setting due dates. It
+                does not change the time due for any existing assignments.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>Language:</td>
+            <td>
+              <select class="form-select">
+                <option selected="edit">
+                  Not set (user-configurable, defaults to English)
+                </option>
+              </select>
+              <p>
+                This will override any user/system language preferences. This is
+                only recommended for foreign language courses.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>File Storage:</td>
+            <td>10000 megabytes</td>
+          </tr>
+          <tr>
+            <td>Large Course:</td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Launch SpeedGrader Filtered by Student Group
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Grading Scheme:</td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Enable course grading scheme
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>License:</td>
+            <td>
+              <select class="form-select">
+                <option selected="edit">Private (Copyrighted)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>File Copyright:</td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Copyright and license information must be provided for files
+                  before they are published.
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Visibility:</td>
+            <td>
+              <p>
+                If you need to make your course public please contact your
+                administrator/support.
+              </p>
+              <select class="form-select">
+                <option selected="edit">Course</option>
+              </select>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Include this course in the public course index
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Format:</td>
+            <td>
+              <select class="form-select">
+                <option selected="edit">On-Campus</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Mastery Paths:</td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Enable individual leanring paths for student based on
+                  assessment
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Description:</td>
+            <td>
+              <div>
+                <textarea class="form-control" cols="30" rows="10">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </textarea>
+
+                <a href="#">more options</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-danger float-end">
+        Update Course Details
+      </button>
+    </div>
+  </body>
+</html>

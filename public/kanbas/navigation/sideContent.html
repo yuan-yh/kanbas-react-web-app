@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* sub content css */
+
+      .subContentMenuList {
+        margin: 0;
+        /* margin-left: 20px !important; */
+
+        padding: 0;
+        list-style: none;
+        text-align: left;
+        position: fixed;
+        width: 200px;
+        overflow: auto;
+      }
+
+      .subContentLink {
+        color: red;
+        display: block;
+        text-decoration: none;
+        border-radius: 3px;
+        padding: 8px 0 8px 6px;
+        word-wrap: break-word;
+        text-align: left;
+        hyphens: none;
+        line-height: 1.3;
+      }
+
+      .subContentLink:hover {
+        color: red;
+        text-decoration: underline;
+      }
+
+      /* .subContentLink.active {
+        border-left: 2px solid #2d3b45;
+        border-radius: 0px;
+        font-weight: bold;
+        color: #2d3b45;
+        padding-left: 8px;
+      } */
+
+      /* END */
+    </style>
+  </head>
+  <body>
+    <div class="sideNavBar" id="sideNavBar"></div>
+  </body>
+
+  <script>
+    // Get the query parameters from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Get the value of the 'param' query parameter (you can change this parameter name)
+    const paramValue = urlParams.get("param");
+
+    // Use the parameter value to display different content
+    if (paramValue === "profile") {
+      showSubContent("account");
+    } else if (paramValue === "assignments") {
+      showSubContent("courses");
+      // document.getElementById('content').innerHTML = '<h1>Option 2 Content</h1>';
+    } else {
+      // document.getElementById('content').innerHTML = '<h1>Default Content</h1>';
+    }
+
+    function showSubContent(contentName) {
+      var lists = {
+        account: [
+          "Notifications",
+          "Profile",
+          "Files",
+          "Settings",
+          "ePortfolios",
+          "Shared Content",
+          "The Hub",
+          "Qwickly Courses Tools",
+          "Global Accouncements",
+        ],
+        dashboard: ["Dashboard"],
+        courses: [
+          "Home",
+          "Module",
+          "Piazza",
+          "Zoom Meetings",
+          "Assignments",
+          "Quizzes",
+          "Grades",
+          "People",
+          "Panopto Video",
+          "Discussions",
+          "Announcements",
+          "Pages",
+          "Files",
+          "Rubrics",
+          "Outcomes",
+          "Collaborations",
+          "Syllabus",
+          "Settings",
+        ],
+        calendar: [],
+        inbox: [],
+        history: [],
+        studio: [],
+        commons: [],
+        help: [],
+      };
+
+      var subContent = "<ul class='subContentMenuList'>";
+      lists[contentName].forEach(function (item) {
+        subContent +=
+          '<li><a class="subContentLink" id="' +
+          item +
+          '" href="#">' +
+          item +
+          "</a></li>";
+      });
+      subContent += "</ul>";
+
+      document.getElementById("sideNavBar").innerHTML = subContent;
+      if (contentName == "account") {
+        document
+          .getElementById("Profile")
+          .addEventListener("click", function () {
+            window.top.location.href = "../profile/index.html";
+          });
+      }
+
+      if (contentName == "courses") {
+        document
+          .getElementById("Assignments")
+          .addEventListener("click", function () {
+            window.top.location.href = "../assignments/index.html";
+          });
+        document.getElementById("Home").addEventListener("click", function () {
+          window.top.location.href = "../home.html";
+        });
+        document
+          .getElementById("Grades")
+          .addEventListener("click", function () {
+            window.top.location.href = "../grades.html";
+          });
+        document
+          .getElementById("Settings")
+          .addEventListener("click", function () {
+            window.top.location.href = "../settings/index.html";
+          });
+      }
+    }
+  </script>
+</html>

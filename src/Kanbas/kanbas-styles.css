@@ -1,0 +1,7 @@
+.kanbas-navigation-col{
+    /* padding-left: 0px !important; */
+    height: 100vh;
+    /* background-color: black !important; */
+    width: 109px !important;
+    overflow: auto;
+}

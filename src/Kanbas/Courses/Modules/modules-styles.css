@@ -1,0 +1,14 @@
+.circleCheckColor {
+  color: green;
+}
+
+.moduleScreen .list-group-item:nth-child(n + 2) {
+  border: 1px solid #c7cdd1;
+  border-left: 5px green solid;
+}
+.moduleScreen .list-group-item .fa-circle-check {
+  color: green;
+}
+.moduleScreen .list-group-item .fa-bar {
+  color: green;
+}

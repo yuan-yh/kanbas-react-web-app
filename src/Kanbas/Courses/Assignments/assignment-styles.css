@@ -1,0 +1,49 @@
+.horizontal-line {
+  color: black;
+  background-color: black;
+  height: 2px;
+  border: none;
+}
+
+.icon-size {
+  font-size: 20px;
+}
+
+.container-fluid {
+  padding-left: 0 !important;
+}
+
+.score {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.assignmentScreen .list-group-item:nth-child(n + 2) {
+  border: 1px solid #c7cdd1;
+  border-left: 5px green solid;
+}
+.assignmentScreen .list-group-item:nth-child(n + 2) .fa-circle-check {
+  color: green;
+}
+.assignmentScreen .list-group-item:nth-child(n + 2) .fa-pen-to-square {
+  color: green;
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.titleHeader {
+  color: red;
+  text-decoration: underline;
+}
+
+.titleHeader:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.fa-bars {
+  color: red;
+}

@@ -1,0 +1,40 @@
+.subContentLink {
+  color: red;
+  display: block;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 8px 0 8px 6px;
+  word-wrap: break-word;
+  text-align: left;
+  hyphens: none;
+  line-height: 1.3;
+}
+
+.subContentLink:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.course-navigation-list-group {
+  border-radius: 0px !important;
+  height: 100%;
+}
+
+.course-navigation-list-group .list-group-item {
+  border: none !important;
+  color: red;
+}
+
+.course-navigation-list-group .list-group-item.active {
+  color: black;
+
+  border-left: 2px solid rgb(45, 59, 69) !important;
+  font-weight: bold;
+  color: rgb(45, 59, 69);
+  background-color: white !important;
+  border-radius: 0px !important;
+}
+
+.course-navigation-list-group .list-group-item.active .list-group-item-text {
+  padding-left: 2px;
+}

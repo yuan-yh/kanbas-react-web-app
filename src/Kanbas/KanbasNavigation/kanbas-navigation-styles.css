@@ -1,0 +1,57 @@
+.menu-item-text {
+  transition: none;
+  position: static;
+  left: auto;
+  top: auto;
+  transform: none;
+  opacity: 1;
+  text-align: center;
+  display: block;
+  line-height: 1.4;
+  border-radius: 0;
+  background-color: black !important;
+  white-space: normal;
+  font-size: 0.875rem;
+  font: arial;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+
+}
+
+.kanbas-navigation-icon {
+  font-size: 25px;
+  color: red;
+}
+
+.kanbas-navigation-label {
+  color: white;
+}
+
+.kanbas-navigation-list-group {
+  border-radius: 0px !important;
+  height: 100%;
+  background-color: black !important;
+}
+
+.kanbas-navigation-list-group .list-group-item.active .kanbas-navigation-label {
+  color: red;
+}
+
+.kanbas-navigation-list-group .list-group-item.active {
+  background-color: white !important;
+  border-color: transparent !important;
+  border: none !important;
+}
+
+.kanbas-navigation-list-group .list-group-item {
+  border: none !important;
+}
+
+
+.neu-logo {
+  background-image: url("./neuLogo.png");
+  height: 75px;
+  margin-left: 5px;
+
+  width: 90%;
+}

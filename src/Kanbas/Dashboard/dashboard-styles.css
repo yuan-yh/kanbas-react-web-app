@@ -1,0 +1,48 @@
+.horizontal-line {
+  color: black;
+  background-color: black;
+  height: 2px;
+  border: none;
+}
+
+.card {
+  width: 250px;
+}
+.card-background-color {
+  box-sizing: border-box;
+  height: 146px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgb(225, 24, 92);
+}
+
+.card-main-title {
+  line-height: 1.3;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: rgb(225, 24, 92) !important;
+}
+
+.card-sub-title {
+  line-height: 1.3;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 2px !important ;
+  color: #677179;
+}
+
+.card-mini-title {
+  line-height: 1.3;
+  color: #677179;
+  font-size: 12px;
+  height: 1rem;
+}
+
+.cardIcon {
+  color: #677179;
+}
+
+.col-min-width {
+  min-width: 250px;
+  margin: 15px;
+}

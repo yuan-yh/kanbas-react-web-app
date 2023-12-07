@@ -1,0 +1,44 @@
+.search-icon {
+  height: 100%;
+  border-radius: 5px 0 0 5px !important;
+}
+
+.generalButtonColor{
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+}
+
+.gradeButtons {
+  background: #f5f5f5;
+  color: #2d3b45;
+  border: 1px solid;
+  border-color: #c7cdd1;
+  border-radius: 3px;
+}
+
+.grades-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.grades-table th,
+.grades-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.grades-table thead th {
+  background-color: #f2f2f2;
+}
+
+.grade-table-row{
+  background-color: #f2f2f2 !important;
+
+}
+
+.student-name {
+  color: red !important;
+}

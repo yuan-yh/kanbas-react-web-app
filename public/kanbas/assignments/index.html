@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
+      rel="stylesheet"
+    />
+    <style>
+      .container-fluid {
+        padding-left: 0 !important;
+      }
+
+      .score {
+        border: 1px solid black;
+        padding: 2px;
+      }
+
+      .list-group-item:nth-child(n + 2) {
+        border: 1px solid #c7cdd1;
+        border-left: 5px green solid;
+      }
+      .list-group-item:nth-child(n + 2) .fa-circle-check {
+        color: green;
+      }
+      .list-group-item:nth-child(n + 2) .fa-pen-to-square {
+        color: green;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: black;
+      }
+
+      .titleHeader {
+        color: red;
+        text-decoration: underline;
+      }
+
+      .titleHeader:hover {
+        color: red;
+        text-decoration: underline;
+      }
+
+      .fa-bars {
+        color: red;
+      }
+      /* Minimized DropDown */
+      .hiddenContentHome {
+        background-color: black;
+        color: white;
+      }
+      .dropdownGlasses {
+        width: 100%;
+        height: 100%;
+      }
+
+      .minimizedButton {
+        background-color: black;
+        border: 0px;
+      }
+      ul.dropdownGlasses li a {
+        color: red;
+      }
+
+      .dropdown-menu .close-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      .bigFont {
+        font-size: 40px;
+      }
+
+      /* END */
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto d-none d-md-block" style="width: 85px">
+          <iframe
+            src="../navigation/mainNav.html"
+            width="85px"
+            height="100%"
+            frameborder="0"
+            id="theSideNavBar"
+            class="fixed-bottom"
+          ></iframe>
+        </div>
+        <div class="col mx-3">
+          <div class="row">
+            <div class="d-none d-md-block">
+              <div class="mt-2">
+                <h4>
+                  <i class="fa-solid fa-bars"></i>
+                  <a href="#" class="titleHeader">CS4550.12631.202410</a> >
+                  Assignments
+                </h4>
+              </div>
+
+              <hr
+                style="
+                  color: black;
+                  background-color: black;
+                  height: 2px;
+                  border: none;
+                "
+              />
+            </div>
+            <div
+              class="d-md-none d-flex justify-content-between align-items-center hiddenContentHome"
+            >
+              <div>
+                <button
+                  class="btn btn-secondary dropdown-toggle minimizedButton"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-bars m-3"></i>
+                </button>
+                <ul class="dropdown-menu dropdownGlasses">
+                  <span
+                    class="close-button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span aria-hidden="true"
+                      ><i class="fa-solid fa-x"></i
+                    ></span>
+                  </span>
+                  <li>
+                    <a class="dropdown-item bigFont" href="#"
+                      ><i class="fa fa-gauge-high menu-icon"></i> Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bigFont" href="#"
+                      ><i class="fa fa-circle-user account-icon"></i> Account</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bigFont" href="#"
+                      ><i class="fa fa-book menu-icon"></i> Courses</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bigFont" href="#"
+                      ><i class="fa fa-calendar-days menu-icon"></i> Calendar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bigFont" href="#"
+                      ><i class="fa fa-envelope menu-icon"></i> Inbox</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bigFont" href="#"
+                      ><i class="fa-brands fa-youtube menu-icon"></i> Studio</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bigFont" href="#"
+                      ><i class="fa fa-share-from-square menu-icon"></i>
+                      Commons</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bigFont" href="#"
+                      ><i class="fa fa-clock menu-icon"></i> History</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item bigFont" href="#"
+                      ><i class="fa fa-circle-question menu-icon"></i> Help</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <p>CS5610.17367.202410<br />A2 - CSS + BOOTSTRAP</p>
+              <div>
+                <button
+                  class="btn btn-secondary dropdown-toggle minimizedButton"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-glasses m-3"></i>
+                </button>
+                <ul class="dropdown-menu dropdownGlasses">
+                  <span
+                    class="close-button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span aria-hidden="true"
+                      ><i class="fa-solid fa-x"></i
+                    ></span>
+                  </span>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-house"></i> Home</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-book"></i> Modules</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-book"></i> Piazza</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-handshake"></i> Zoom Meetings</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-book"></i> Assignments</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-brands fa-quinscape"></i> Quizzes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-book"></i> Piazza</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-graduation-cap"></i> Grades</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-person"></i> People</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-book"></i> Panopto Video</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-bullhorn"></i> Discussions</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-bullhorn"></i> Announcements</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-book"></i> Pages</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-book"></i> Files</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-scale-balanced"></i> Rubrics</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-book"></i> Outcomes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-people-group"></i>
+                      Collaborations</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-book"></i> Syllabus</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-gear"></i> Settings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div
+                class="col-auto sideNavBar d-none d-md-block"
+                id="sideNavBar"
+              >
+                <iframe
+                  src="../navigation/sideContent.html?param=assignments"
+                  width="200"
+                  height="1000px"
+                  frameborder="0"
+                  id="theSideSideNavBar"
+                ></iframe>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row mt-3">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputText"
+                    placeholder="Search for Assignment"
+                  />
+                </div>
+                <div class="col">
+                  <div class="d-flex justify-content-end">
+                    <button class="btn btn-secondary ms-3">+ Group</button>
+                    <button class="btn btn-danger ms-3">+ Assignment</button>
+                    <button class="btn btn-secondary ms-3">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <hr
+                style="
+                  color: #ccc;
+                  background-color: #ccc;
+                  height: 2px;
+                  border: none;
+                "
+              />
+
+              <div class="list-group">
+                <li class="list-group-item list-group-item-secondary">
+                  <div class="row pt-2">
+                    <div class="col-auto">
+                      <i class="fa-solid fa-bars fa-rotate-90"></i>
+                    </div>
+                    <div class="col-auto">
+                      <h4>
+                        <i class="fa-solid fa-caret-down"></i> Assignments
+                      </h4>
+                    </div>
+                    <div class="col">
+                      <div class="float-end score rounded-pill">
+                        40% of Total
+                      </div>
+                    </div>
+                    <div class="col-auto ml-auto">
+                      <i class="fa-regular fa-plus"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row pt-2">
+                    <div class="col-auto">
+                      <i class="fa-solid fa-bars fa-rotate-90"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                    <div class="col">
+                      <div>
+                        <a href="edit.html">
+                          <h5 class="fw-bold">A1 Setup</h5></a
+                        >
+                        <p>
+                          Week 0 - SETUP - Week starting on Monday September
+                          5th(9/5/2022) Module |<br /><b>Due</b> Sep 18, 2022 at
+                          11:59pm | 100pts
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-auto ml-auto">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row pt-2">
+                    <div class="col-auto">
+                      <i class="fa-solid fa-bars fa-rotate-90"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                    <div class="col">
+                      <div>
+                        <a href="edit.html">
+                          <h5 class="fw-bold">A2 HTML</h5></a
+                        >
+
+                        <p>
+                          Week 1 - HTML - Week starting on Monday September
+                          12th(9/12/2022) Module |<br /><b>Due</b> Sep 25, 2022
+                          at 11:59pm | 100pts
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-auto ml-auto">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row pt-2">
+                    <div class="col-auto">
+                      <i class="fa-solid fa-bars fa-rotate-90"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                    <div class="col">
+                      <div>
+                        <a href="edit.html"> <h5 class="fw-bold">A3 CSS</h5></a>
+
+                        <p>
+                          Week 1 - HTML - Week starting on Monday September
+                          12th(9/12/2022) Module |<br /><b>Due</b> Sep 25, 2022
+                          at 11:59pm | 100pts
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-auto ml-auto">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row pt-2">
+                    <div class="col-auto">
+                      <i class="fa-solid fa-bars fa-rotate-90"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                    <div class="col">
+                      <div>
+                        <a href="edit.html">
+                          <h5 class="fw-bold">A4 BOOTSTRAP</h5></a
+                        >
+
+                        <p>
+                          Week 1 - HTML - Week starting on Monday September
+                          12th(9/12/2022) Module |<br /><b>Due</b> Sep 25, 2022
+                          at 11:59pm | 100pts
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-auto ml-auto">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row pt-2">
+                    <div class="col-auto">
+                      <i class="fa-solid fa-bars fa-rotate-90"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                    <div class="col">
+                      <div>
+                        <a href="edit.html">
+                          <h5 class="fw-bold">A5 JAVASCRIPT</h5></a
+                        >
+
+                        <p>
+                          Week 1 - HTML - Week starting on Monday September
+                          12th(9/12/2022) Module |<br /><b>Due</b> Sep 25, 2022
+                          at 11:59pm | 100pts
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-auto ml-auto">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row pt-2">
+                    <div class="col-auto">
+                      <i class="fa-solid fa-bars fa-rotate-90"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-regular fa-pen-to-square"></i>
+                    </div>
+                    <div class="col">
+                      <div>
+                        <a href="edit.html">
+                          <h5 class="fw-bold">A6 REACT</h5></a
+                        >
+
+                        <p>
+                          Week 1 - HTML - Week starting on Monday September
+                          12th(9/12/2022) Module |<br /><b>Due</b> Sep 25, 2022
+                          at 11:59pm | 100pts
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-auto ml-auto">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+      function changeNavBarAndSideBar(mainNavId, sideNavId = undefined) {
+        var mainiframe = document.getElementById("theSideNavBar");
+
+        mainiframe.addEventListener("load", function () {
+          var mainNav = mainiframe.contentDocument.getElementById(mainNavId);
+          if (mainNav) {
+            mainNav.classList.add("selectedText");
+            mainNav.style.backgroundColor = "white";
+
+            mainNav.querySelector(".menu-item-text").style.color = "red";
+          }
+        });
+        if (sideNavId != undefined) {
+          sideiframe = document.getElementById("theSideSideNavBar");
+
+          sideiframe.addEventListener("load", function () {
+            var sideNav = sideiframe.contentDocument.getElementById(sideNavId);
+            sideNav.style.borderLeft = "2px solid #2d3b45";
+            sideNav.style.borderRadius = "0px";
+            sideNav.style.fontWeight = "bold";
+            sideNav.style.color = "#2d3b45";
+            sideNav.style.paddingLeft = "8px";
+          });
+        }
+      }
+
+      changeNavBarAndSideBar("coursesID", "Assignments");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.horizontal-line {
+  color: black;
+  background-color: black;
+  height: 2px;
+  border: none;
+}
+
+.breadcrumb-icon {
+  color: red;
+  margin-top: -3px;
+}
+.breadcrumb-title {
+  font-size: 25px;
+}
+.breadcrumb-course-name {
+  color: red;
+}
